@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Ctrl+B as Left Arrow",
+  "version": "1.0",
+  "description": "Ctrl+B で ← キーと同じ動作をする拡張（Mac対応）",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
